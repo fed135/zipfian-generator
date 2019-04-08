@@ -5,7 +5,7 @@ Generate large data sets with a given z-distribution
 
 You can either use it via import:
 
-```
+```javascript
 import {generate} from './zipfian-generator';
 
 /**
@@ -15,12 +15,13 @@ import {generate} from './zipfian-generator';
  * @param {number} variants The number of individual variants for records (sampleSize * variants), which is applied linearly. Default: 1
  * @param {string} outfile The name of the output file. Default: sample_<alpha>_<sampleSize>_<variants>.txt
  * @param {boolean} push Indicates wether to overrite the outfile (false), if it exists, or append to it (true). Default: false
+*/
 generate(1,100000,1,'./samples.txt', false);
 ```
 
 Or via the cli:
 
-```
+```bash
 # -a --alpha      The alpha value for the generate method
 # -s --size       The sampleSize value for the generate method
 # -v --variants   The variants value for the generate method
