@@ -1,6 +1,8 @@
 # zipfian-generator
 Generate large data sets with a given z-distribution
 
+<img src="./graph.png">
+
 ## Usage
 
 You can either use it via import:
